@@ -1,7 +1,0 @@
-{
-  "package_name": "vlm_driver_msgs",
-  "non_idl_tuples": [
-    "/home/samaviajaffery/project_ws/src/vlm_driver_msgs:msg/DrivingDecisions.msg",
-    "/home/samaviajaffery/project_ws/src/vlm_driver_msgs:msg/PipelineMetrics.msg"
-  ]
-}

@@ -1,4 +1,0 @@
-source;share/vlm_driver_msgs/local_setup.bash
-source;share/vlm_driver_msgs/local_setup.dsv
-source;share/vlm_driver_msgs/local_setup.sh
-source;share/vlm_driver_msgs/local_setup.zsh

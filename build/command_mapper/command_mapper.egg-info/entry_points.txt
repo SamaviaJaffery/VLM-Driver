@@ -1,3 +1,0 @@
-[console_scripts]
-mapper_node = command_mapper.mapper_node:main
-
