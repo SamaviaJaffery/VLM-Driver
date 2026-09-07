@@ -14,9 +14,13 @@ Debug masks, visual overlays, and behavioral analysis
 
 The complete team project, including hardware interfaces and vehicle-level integration, is available on the main branch.
 
+![Obstacle mask produced through HSV segmentation and the Decisions](media/Classical_OA_Decision_Making.jpg)
+
 ## Project Context
 
 VLM-Driver was developed collaboratively as a course project at the University of Central Florida. The complete platform included a small-scale F1-tenth style autonomous vehicle, a forward-facing Intel RealSense camera, ROS 2, a VESC-based drive interface, classical obstacle avoidance, and VLM-based driving control.
+
+![small scall autonomous vehicle](media/Vehicle_Platform.png)
 
 This branch preserves my individual software contribution and can be used to inspect and test the perception and decision pipeline without operating the physical vehicle.
 
