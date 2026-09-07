@@ -1,6 +1,41 @@
-# VLM Driver ROS 2 Packages
+## VLM-Driver: Baseline Perception and Obstacle-Avoidance Pipeline
 
-This `src` folder contains the ROS 2 packages for a small autonomous driving pipeline. The system takes camera images, turns them into high-level driving decisions, and then maps those decisions into Ackermann drive commands.
+This branch contains the independently runnable perception, obstacle-avoidance, and offline-testing pipeline that I developed as part of the collaborative VLM-Driver course project.
+
+The overall project investigated whether vision-language models could directly generate driving decisions for a small-scale autonomous vehicle. The VLM-based approach was evaluated against a classical computer-vision baseline operating on images from a forward-facing camera.
+
+This branch focuses specifically on:
+
+A classical vision-based obstacle-avoidance baseline
+The ROS 2 perception-to-command software pipeline
+VLM inference wrappers and output-safety checks
+Offline image and video testing utilities
+Debug masks, visual overlays, and behavioral analysis
+
+The complete team project, including hardware interfaces and vehicle-level integration, is available on the main branch.
+
+## Project Context
+
+VLM-Driver was developed collaboratively as a course project at the University of Central Florida. The complete platform included a small-scale F1-tenth style autonomous vehicle, a forward-facing Intel RealSense camera, ROS 2, a VESC-based drive interface, classical obstacle avoidance, and VLM-based driving control.
+
+This branch preserves my individual software contribution and can be used to inspect and test the perception and decision pipeline without operating the physical vehicle.
+
+## My Contributions
+
+I was responsible for:
+
+Developing the ROS 2 autonomy software pipeline connecting camera input, obstacle-avoidance decisions, and the vehicle command mapper.
+Implementing and tuning the classical computer-vision obstacle-avoidance baseline.
+Using HSV segmentation, morphological filtering, and region-based occupancy scores to determine steering and speed decisions.
+Developing a monocular proximity heuristic based on image occupancy to trigger slow, creep, and emergency-stop behavior.
+Implementing model-inference wrappers and safety validation for structured VLM outputs.
+Creating offline testing utilities, including fake camera publishers, video-to-image processing, and image-request scripts.
+Adding masks, visual overlays, debugging outputs, and performance-monitoring interfaces.
+Analyzing VLM latency, repeated-command bias, unsafe directional decisions, and output-format inconsistencies.
+
+My original implementation is preserved in the
+`samavia/baseline_OA` branch. This branch contains a version that can
+be tested without the physical vehicle.
 
 ## Packages
 
